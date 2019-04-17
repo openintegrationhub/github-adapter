@@ -1,0 +1,87 @@
+{
+  "title": "GitHub Adapter",
+  "description": "OIH Adapter for GitHub",
+  "docsUrl": "https://github.com/elasticio/petstore-component-nodejs",
+  "envVars": {
+    "CLIENT_ID": {
+      "required": true,
+      "description": "Your GitHub OAuth client key"
+    },
+    "CLIENT_SECRET": {
+      "required": true,
+      "description": "Your GitHub OAuth client secret"
+    }
+  },
+  "credentials": {
+    "fields": {
+      "oauth": {
+        "label": "Authentication",
+        "viewClass": "OAuthFieldView",
+        "required": true
+      }
+    },
+    "oauth2": {
+      "client_id": "{{CLIENT_ID}}",
+      "client_secret": "{{CLIENT_SECRET}}",
+      "auth_uri": "https://github.com/login/oauth/authorize",
+      "token_uri": "https://github.com/login/oauth/access_token",
+      "scopes": [
+        "repo",
+        "user",
+        "admin:org"
+    ]
+    }
+  },
+  "triggers": {
+    "GetOrganizationsPolling": {
+      "title": "GetOrganizationsPolling",
+      "main": "./lib/triggers/getOrganizations.js",
+      "type": "polling",
+      "metadata": {
+        "out": "./lib/schemas/getOrganizations.out.json"
+      }
+    },
+    "GetIssuesPolling": {
+      "title": "GetIssuesPolling",
+      "main": "./lib/triggers/getIssues.js",
+      "type": "polling",
+      "metadata": {
+        "out": "./lib/schemas/getIssues.out.json"
+      }
+    },
+    "GetPullRequestsPolling":{
+      "title": "GetPullRequestsPolling",
+      "main": "./lib/triggers/getPullRequests.js",
+      "type": "polling",
+      "metadata": {
+        "out": "./lib/schemas/getOrganizationMembers.out.json"
+      }
+    },
+    "GetOrganizationMembersPolling":{
+      "title": "GetOrganizationMembersPolling",
+      "main": "./lib/triggers/getOrganizationMembers.js",
+      "type": "polling",
+      "metadata": {
+        "out": "./lib/schemas/getPullRequests.out.json"
+      }
+    }
+  },
+  "actions": {
+    "createIssue": {
+      "main": "./lib/actions/createIssue.js",
+      "title": "Create an issue",
+      "metadata": {
+        "in": "./lib/schemas/createIssue.in.json",
+        "out": "./lib/schemas/createIssue.out.json"
+      }
+    },
+    "createPullRequest": {
+      "main": "./lib/actions/createPullRequest.js",
+      "title": "Create a pull request",
+      "metadata": {
+        "in": "./lib/schemas/createPullRequest.in.json",
+        "out": "./lib/schemas/createPullRequest.out.json"
+      }
+    }
+  }
+}

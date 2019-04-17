@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "repository": {
+      "type": "string",
+      "title": "repository",
+      "description": "Repository name where the issue should be created",
+      "required": true
+    },
+    "owner": {
+      "type": "string",
+      "title": "owner",
+      "description": "Owner of the repository",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "description": "The title of the pull request.",
+      "title": "title"
+    },
+    "head": {
+      "type": "string",
+      "title": "head",
+      "required": true,
+      "description": "The name of the branch where your changes are implemented. For cross-repository pull requests in the same network, namespace head with a user like this: username:branch."
+    },
+    "base": {
+      "type": "string",
+      "title": "base",
+      "required": true,
+      "description": "The name of the branch you want the changes pulled into. This should be an existing branch on the current repository. You cannot submit a pull request to one repository that requests a merge to a base of another repository."
+    },
+    "body": {
+      "type": "string",
+      "title": "body",
+      "description": "The contents of the pull request."
+    },
+    "maintainer_can_modify": {
+      "type": "boolean",
+      "title": "maintainer_can_modify",
+      "description": "Indicates whether maintainers can modify the pull request."
+    },
+    "draft": {
+      "type": "boolean",
+      "title": "draft",
+      "description": "Indicates whether the pull request is a draft. See Draft Pull Requests in the GitHub Help documentation to learn more."
+    }
+  }
+}

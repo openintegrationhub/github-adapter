@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "repository": {
+      "type": "string",
+      "title": "repository",
+      "description": "Repository name where the issue should be created",
+      "required": true
+    },
+    "owner": {
+      "type": "string",
+      "title": "owner",
+      "description": "Owner of the repository",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "description": "Title of the new issue",
+      "title": "title"
+    },
+    "body": {
+      "type": "string",
+      "title": "body"
+    },
+    "assignees": {
+      "type": "array",
+      "title": "assignees",
+      "items":{
+        "type": "string" 
+      }
+    },
+    "milestone": {
+      "type": "number",
+      "title": "milestone"
+    },
+    "labels": {
+      "type": "array",
+      "title": "labels",
+      "items":{
+        "type": "string" 
+      }
+    }
+  }
+}
