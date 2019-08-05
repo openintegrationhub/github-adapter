@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "description": "elastic.io component for the Petstore API",
     "scripts": {
+        "start": "node ./node_modules/elasticio-sailor-nodejs/run.js",
         "test": "exit 0"
     },
     "repository": {
