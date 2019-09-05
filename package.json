@@ -1,16 +1,16 @@
 {
-    "name": "@elasticio/petstore-component-nodejs",
+    "name": "@openintegrationhub/github-adapter",
     "version": "0.0.1",
-    "description": "elastic.io component for the Petstore API",
+    "description": "Open Integration Hub Adapter for GitHub API",
     "scripts": {
         "start": "node ./node_modules/elasticio-sailor-nodejs/run.js",
         "test": "exit 0"
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:elasticio/petstore-component-nodejs.git"
+        "url": "git@github.com:openintegrationhub/github-adapter.git"
     },
-    "author": "elastic.io GmbH",
+    "author": "Cloud Ecosystem e.V.",
     "license": "BSD-2-Clause",
     "engines": {
         "node": "8.6.0",

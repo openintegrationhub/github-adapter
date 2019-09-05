@@ -1,5 +1,5 @@
 FROM node:10-alpine
-LABEL NAME="dreamrobot-adapter"
+LABEL NAME="github-adapter"
 LABEL MAINTAINER Philipp Hoegner "philipp.hoegner@cloudecosystem.org"
 LABEL SUMMARY="This image is used to start the Adapter Transformer for OIH"
 
