@@ -16,7 +16,7 @@
     "title": {
       "type": "string",
       "required": true,
-      "description": "Title of the new issue",
+      "description": "The title of the issue.",
       "title": "title"
     },
     "body": {
@@ -26,17 +26,23 @@
     "assignees": {
       "type": "array",
       "title": "assignees",
+      "description": "Logins for Users to assign to this issue.",
+      "note": "NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise.",
       "items":{
         "type": "string" 
       }
     },
     "milestone": {
       "type": "number",
-      "title": "milestone"
+      "title": "milestone",
+      "description": "The number of the milestone to associate this issue with.",
+      "note": "NOTE: Only users with push access can set the milestone for new issues. The milestone is silently dropped otherwise."
     },
     "labels": {
       "type": "array",
       "title": "labels",
+      "description": "Labels to associate with this issue.",
+      "note": "NOTE: Only users with push access can set labels for new issues. Labels are silently dropped otherwise.",
       "items":{
         "type": "string" 
       }

@@ -45,17 +45,25 @@ Root
 
 Fetches all issues assigned to the current user.
 
+Outgoing message format: [**outgoing message format**](lib/schemas/getIssues.out.json)
+
 #### Get Pull Requests
 
 Fetches all pull requests assigned to the current user.
+
+Outgoing message format: [**outgoing message format**](lib/schemas/getPullRequests.out.json)
 
 #### Get Organizations
 
 Fetches all organizations the current user belongs to.
 
+Outgoing message format: [**outgoing message format**](lib/schemas/getOrganizations.out.json)
+
 #### Get Organization Members
 
 Fetches all organization members of the organizations the current user belongs to.
+
+Outgoing message format: [**outgoing message format**](lib/schemas/getOrganizationMembers.out.json)
 
 ### Actions
 
@@ -63,9 +71,33 @@ Fetches all organization members of the organizations the current user belongs t
 
 Creates a new issue on behalf of the user in the specified repsitory.
 
+Incoming message format: [**incoming message format**](lib/schemas/createIssues.in.json)
+
+Outgoing message format: [**outgoing message format**](lib/schemas/createIssues.out.json)
+
+##### Required Fields
+
+- repository
+- owner
+- title (The title of the issue.)
+
 #### Create Pull Request
 
 Creates a new pull request on behalf of the user, in the specified repository.
+
+Incoming message format: [**incoming message format**](lib/schemas/createPullRequest.in.json)
+
+Outgoing message format: [**outgoing message format**](lib/schemas/createPullRequest.out.json)
+
+- repository
+- owner
+- title (The title of the new pull request.)
+- head (The name of the branch where your changes are implemented.)
+- base (The name of the branch you want the changes pulled into.)
+
+## Version
+
+V 2.0
 
 ## License
 
