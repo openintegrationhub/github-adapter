@@ -97,7 +97,7 @@ Outgoing message format: [**outgoing message format**](lib/schemas/createPullReq
 
 ## Version
 
-V 2.0
+Version 2.0
 
 ## License
 
