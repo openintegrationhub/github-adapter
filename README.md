@@ -1,8 +1,11 @@
+<p align="center">
+  <img src="https://github.com/openintegrationhub/openintegrationhub/blob/master/Assets/medium-oih-einzeilig-zentriert.jpg" alt="Sublime's custom image" width="400"/>
+</p>
+
+
 # Github-Adapter
 
-![logo](logo.png) ![oih](https://github.com/openintegrationhub/openintegrationhub/blob/master/Assets/medium-oih-einzeilig-zentriert.jpg)
-
-Open Integration Hub adapter for [**The world's leading software development platform · GitHub**](https://github.com).
+<img src="logo.png" alt="Sublime's custom image" width="40"/> Open Integration Hub adapter for [**The world's leading software development platform · GitHub**](https://github.com).
 
 ## Authentication
 
