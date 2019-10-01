@@ -10,8 +10,8 @@
         "type": "git",
         "url": "git@github.com:openintegrationhub/github-adapter.git"
     },
-    "author": "Cloud Ecosystem e.V.",
-    "license": "BSD-2-Clause",
+    "author": "Philipp Hoegner (GitHub: philecs) - Cloud Ecosystem e.V.",
+    "license": "Apache 2.0",
     "engines": {
         "node": "8.6.0",
         "npm": ">=5.4"
