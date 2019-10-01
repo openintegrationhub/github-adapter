@@ -2,7 +2,6 @@
   <img src="https://github.com/openintegrationhub/openintegrationhub/blob/master/Assets/medium-oih-einzeilig-zentriert.jpg" alt="Sublime's custom image" width="400"/>
 </p>
 
-
 # Github-Adapter
 
 <img src="logo.png" alt="Sublime's custom image" width="40"/> Open Integration Hub adapter for [**The world's leading software development platform · GitHub**](https://github.com).
@@ -88,6 +87,8 @@ Creates a new pull request on behalf of the user, in the specified repository.
 Incoming message format: [**incoming message format**](lib/schemas/createPullRequest.in.json)
 
 Outgoing message format: [**outgoing message format**](lib/schemas/createPullRequest.out.json)
+
+##### Required Fields
 
 - repository
 - owner
